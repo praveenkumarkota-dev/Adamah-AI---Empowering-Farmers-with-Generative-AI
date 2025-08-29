@@ -41,13 +41,47 @@ It provides **multilingual, trusted, and actionable farm advisory** on crop issu
 
 ---
 
-## 🛠️ Tech Stack
+🆚 **Uniqueness:** Unlike existing platforms, KrishiMitra AI is:
 
-**Frontend:** React (Vite) + Tailwind + i18n
-**Backend:** Node.js (Express, TypeScript)
-**AI/RAG Service:** Python (FastAPI, Sentence Transformers, pgvector)
-**Database:** PostgreSQL + pgvector extension
-**Deployment:** Vercel (frontend), Railway/Render (backend + DB)
+* Multilingual & voice-first (easy for rural farmers).
+* Combines **AI + local agricultural data + government resources**.
+* Works as a **24/7 digital companion** instead of static apps.
+
+---
+
+## Use of OpenAI APIs
+
+* **GPT-4.1 / GPT-4o** → For generating farmer-friendly advice in simple local language.
+* **Whisper API** → For speech-to-text (farmers can ask queries via voice).
+* **DALL·E API** → For generating visual guides (pest identification charts, fertilizer application methods).
+* **Vision API (GPT-4o with image input)** → Farmers upload crop images → AI detects disease.
+
+Integration Flow:
+
+1. Farmer speaks/asks → Whisper → text.
+2. GPT processes query + context → gives response.
+3. If image uploaded → GPT-4o Vision analyzes → suggests solution.
+4. Optional: DALL·E creates **visual guides** (infographics).
+
+---
+
+## Feasibility
+
+🛠 **Tech Stack**:
+
+* Frontend → React.js (progressive web app, mobile-friendly).
+* Backend → Node.js.
+* Database → SQL (farmer profiles, crop history).
+* APIs → OpenAI (GPT, Whisper, DALL·E), Weather API, Govt Scheme API (if available).
+
+⚙ **Architecture (Simplified):**
+Farmer App (Voice/Chat + Image Upload) → Backend (AI Orchestration) → OpenAI APIs → Response Delivery (Voice/Chat + Visual).
+
+📍 **Constraints & Plans:**
+
+* Offline Mode (basic Q&A cached for poor internet areas).
+* Prioritize Telugu/Hindi for Phase 1 rollout.
+* Deploy prototype on **Replit/GitHub** for demo.
 
 ---
 
@@ -86,7 +120,7 @@ It provides **multilingual, trusted, and actionable farm advisory** on crop issu
 
 ---
 
-## 🎥 Demo (2 min flow)
+## 🎥 Demo 
 
 1. **Farmer asks in Telugu:** “నా వరి ఆకులు పసుపు రంగులోకి మారుతున్నాయి”
 
@@ -120,8 +154,8 @@ It provides **multilingual, trusted, and actionable farm advisory** on crop issu
 
 ```
 Adamah-ai/
-├── frontend/      # React + Tailwind + i18n
-├── backend/       # Node.js Express API
+├── frontend/      # React. js
+├── backend/       # Node.js API
 ├── rag-service/   # Python FastAPI RAG + embeddings
 ├── db/            # SQL migrations
 └── README.md
@@ -140,4 +174,9 @@ For severe issues, farmers should **contact local KVKs or extension officers**.
 ⚡ **Made with ❤️ for Bharat** | NXTwave x OpenAI Innovation Challenge 2025
 
 ---
+
+
+
+
+
 
