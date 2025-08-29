@@ -1,3 +1,5 @@
+<img src="https://res.cloudinary.com/dcnncsybz/image/upload/v1756484688/ChatGPT_Image_Aug_29_2025_09_53_13_PM_q7j0bk.png" alt="Banner" style="width:100%;" />
+
 # 🌾 Adamah AI — Empowering Farmers with Generative AI
 
 ## 📌 Overview
