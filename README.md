@@ -43,7 +43,7 @@ It provides **multilingual, trusted, and actionable farm advisory** on crop issu
 
 ---
 
-🆚 **Uniqueness:** Unlike existing platforms, KrishiMitra AI is:
+🆚 **Uniqueness:** Unlike existing platforms, Adamah AI is:
 
 * Multilingual & voice-first (easy for rural farmers).
 * Combines **AI + local agricultural data + government resources**.
